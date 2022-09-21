@@ -48,7 +48,7 @@
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Matthew Boler}  & 770-855-5529\\
 \#501 Webster Road, Lot 315 & meb0054@auburn.edu \\
-Auburn, AL 36832 & \url{https://mattboler.github.io/}\\
+Auburn, AL 36832 \\ %& \url{https://mattboler.github.io/}\\
 \end{tabular*}
 \\
 
@@ -60,18 +60,24 @@ Auburn, AL 36832 & \url{https://mattboler.github.io/}\\
 
 \item
 	\ressubheading{Auburn University}{Auburn, AL}{Ph.D., Mechanical Engineering}{Anticipated May 2025}
+	\begin{itemize}
+		\resitem{Research Topic: Robust inertial navigation and optimal control}
+	\end{itemize}
 
 \item
-	\ressubheading{Auburn University}{Auburn, AL}{M.S., Mechanical Engineering}{August 2021}
+	\ressubheading{Auburn University}{Auburn, AL}{M.S., Mechanical Engineering}{May 2022}
 	\begin{itemize}
 		\resitem{Thesis: "Observability-Informed Measurement Validation for Visual-Inertial Navigation"}
-		\resitem{Advisor: Dr. Scott Martin}
 	\end{itemize}
 
 \item
 	\ressubheading{Auburn University}{Auburn, AL}{B.S. Mechanical Engineering, Computer Science Minor}{May 2019}
 
 \end{itemize}
+
+\begin{description}
+	\item[] \textit{Publications available upon request}
+\end{description}
 
 \resheading{Experience}
 \begin{itemize}
@@ -80,10 +86,18 @@ Auburn, AL 36832 & \url{https://mattboler.github.io/}\\
 	\ressubheading{GPS and Vehicle Dynamics Laboratory}{Auburn, AL}{Graduate Research Assistant}{2019 - Current}\\
 	\vspace{10pt}
 
+	\large \textbf{RSSI-Aided Navigation} \normalsize
+	\vspace{-5pt}
+	\begin{itemize}
+		\item Implemented an error-state marginalized particle filter to aid an inertial navigation system with signal anomaly maps.
+		\item Developed nonparametric mapping methods using gaussian processes to update anomaly maps.
+		\item Analyzed sensitivity of navigators to map, sensor, and initialization errors using monte-carlo simulations.
+	\end{itemize}
+
 	\large \textbf{Multispectral Visual Navigation} \normalsize
 	\vspace{-5pt}
 	\begin{itemize}
-		\resitem{Developed a Multi-State Constraint Kalman Filter (MSCKF) with holonomic constraints and online extrinsic calibration for GPS-denied infrared+INS ground vehicle navigation.}
+		\resitem{Developed a multi-state constraint Kalman filter (MSCKF) with holonomic constraints and online extrinsic calibration for GPS-denied infrared+INS ground vehicle navigation.}
 		\resitem{Designed a full-smoothing visual-inertial SLAM system using ISAM2 and a novel geometric validation module for robust feature initialization.}
 		\resitem{Reduced sensitivity of visual SLAM systems to dynamic environments by adaptively segmenting static and dynamic image regions using YOLO and monitoring feature behavior.}
 	\end{itemize}
@@ -92,14 +106,13 @@ Auburn, AL 36832 & \url{https://mattboler.github.io/}\\
 	\vspace{-5pt}
 	\begin{itemize}
 		\resitem{Developed a robust ground-removal algorithm for LIDAR obstacle detection to handle large bank angles using a smoothed height-variance map in ROS and PCL.}
-		\resitem{Developed a combined offline graph SLAM and online particle filter localization subsystem using LIDAR, wheel odometry, and IMU.}
-		\resitem{Developed a lighweight path planning node in ROS to generate minimum-jerk trajectories at 200Hz.}
+		\resitem{Developed a lighweight path planning node in ROS to generate optimal trajectories at 200Hz.}
 	\end{itemize}
 
 \item
-	\ressubheading{Sandia National Laboratories}{Albuquerque, NM}{Intern - Navigation, Pointing, and Control}{2020}
+	\ressubheading{Sandia National Laboratories}{Albuquerque, NM}{Intern - GNC, Autonomy}{2020, 2022}
 	\begin{itemize}
-		\item Designed experiments to determine performance characteristics of image registration methods for multispectral/hyperspectral imaging systems.
+		\item Developed a robust real-time lidar odometry for edge platforms using adaptive nonlinear smoothing
 		\item Implemented modified Fourier-Mellin, SIFT, and other algorithms to improve registration performance between visual-spectrum and hyperspectral images.
 	\end{itemize}
 
@@ -112,8 +125,6 @@ Auburn, AL 36832 & \url{https://mattboler.github.io/}\\
 C++, Python, Matlab, Julia
 \item[Software:]
 Git, \LaTeX, Docker, Robot Operating System (ROS) 1 and 2
-\item[Libraries:]
-Numpy, SciPy, Pandas, OpenCV, PyTorch, Eigen, PCL, Open3D, GTSAM
 \end{description}
 
 \end{document}
